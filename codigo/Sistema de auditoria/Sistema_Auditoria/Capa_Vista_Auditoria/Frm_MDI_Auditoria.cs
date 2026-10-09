@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using mantenimiento_auditores;
 
 namespace Capa_Vista_Auditoria
 {
@@ -122,6 +123,17 @@ namespace Capa_Vista_Auditoria
             {
                 childForm.Close();
             }
+        }
+
+        private void grupo2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void auditadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_auditados auditados = new Frm_auditados();
+            auditados.Show();
         }
     }
 }
