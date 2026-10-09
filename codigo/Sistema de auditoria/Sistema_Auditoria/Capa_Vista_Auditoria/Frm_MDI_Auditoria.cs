@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using mantenimiento_auditores;
+using Capa_Vista_Perfil_Auditor;
 
 namespace Capa_Vista_Auditoria
 {
@@ -134,6 +135,12 @@ namespace Capa_Vista_Auditoria
         {
             Frm_auditados auditados = new Frm_auditados();
             auditados.Show();
+        }
+
+        private void perfilAuditorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Perfil_Auditor perfil_Auditor = new Frm_Perfil_Auditor();
+            perfil_Auditor.Show();
         }
     }
 }

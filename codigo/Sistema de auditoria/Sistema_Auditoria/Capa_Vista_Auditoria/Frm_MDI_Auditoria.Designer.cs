@@ -69,6 +69,7 @@ namespace Capa_Vista_Auditoria
             this.gruposToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grupo1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grupo2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.auditadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grupo3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grupo4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -87,7 +88,7 @@ namespace Capa_Vista_Auditoria
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.auditadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.perfilAuditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.menuStrip.SuspendLayout();
@@ -103,7 +104,7 @@ namespace Capa_Vista_Auditoria
             this.pnlHeader.Controls.Add(this.pnlLineaHeader);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(2);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(632, 73);
             this.pnlHeader.TabIndex = 100;
@@ -112,7 +113,7 @@ namespace Capa_Vista_Auditoria
             // 
             this.picLogo.Image = global::Capa_Vista_Auditoria.Properties.Resources.logo_auditores;
             this.picLogo.Location = new System.Drawing.Point(14, 11);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(2);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(48, 52);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -148,7 +149,7 @@ namespace Capa_Vista_Auditoria
             this.pnlLineaHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
             this.pnlLineaHeader.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlLineaHeader.Location = new System.Drawing.Point(0, 71);
-            this.pnlLineaHeader.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlLineaHeader.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLineaHeader.Name = "pnlLineaHeader";
             this.pnlLineaHeader.Size = new System.Drawing.Size(632, 2);
             this.pnlLineaHeader.TabIndex = 104;
@@ -386,7 +387,7 @@ namespace Capa_Vista_Auditoria
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.optionsToolStripMenuItem.Text = "&Opciones";
             // 
             // gruposToolStripMenuItem
@@ -403,28 +404,36 @@ namespace Capa_Vista_Auditoria
             // grupo1ToolStripMenuItem
             // 
             this.grupo1ToolStripMenuItem.Name = "grupo1ToolStripMenuItem";
-            this.grupo1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.grupo1ToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.grupo1ToolStripMenuItem.Text = "Grupo 1";
             // 
             // grupo2ToolStripMenuItem
             // 
             this.grupo2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.auditadosToolStripMenuItem});
+            this.auditadosToolStripMenuItem,
+            this.perfilAuditorToolStripMenuItem});
             this.grupo2ToolStripMenuItem.Name = "grupo2ToolStripMenuItem";
             this.grupo2ToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.grupo2ToolStripMenuItem.Text = "Auditores y Asignaciones";
             this.grupo2ToolStripMenuItem.Click += new System.EventHandler(this.grupo2ToolStripMenuItem_Click);
             // 
+            // auditadosToolStripMenuItem
+            // 
+            this.auditadosToolStripMenuItem.Name = "auditadosToolStripMenuItem";
+            this.auditadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.auditadosToolStripMenuItem.Text = "Auditados";
+            this.auditadosToolStripMenuItem.Click += new System.EventHandler(this.auditadosToolStripMenuItem_Click);
+            // 
             // grupo3ToolStripMenuItem
             // 
             this.grupo3ToolStripMenuItem.Name = "grupo3ToolStripMenuItem";
-            this.grupo3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.grupo3ToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.grupo3ToolStripMenuItem.Text = "Grupo 3";
             // 
             // grupo4ToolStripMenuItem
             // 
             this.grupo4ToolStripMenuItem.Name = "grupo4ToolStripMenuItem";
-            this.grupo4ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.grupo4ToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.grupo4ToolStripMenuItem.Text = "Grupo 4";
             // 
             // windowsMenu
@@ -541,12 +550,12 @@ namespace Capa_Vista_Auditoria
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // auditadosToolStripMenuItem
+            // perfilAuditorToolStripMenuItem
             // 
-            this.auditadosToolStripMenuItem.Name = "auditadosToolStripMenuItem";
-            this.auditadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.auditadosToolStripMenuItem.Text = "Auditados";
-            this.auditadosToolStripMenuItem.Click += new System.EventHandler(this.auditadosToolStripMenuItem_Click);
+            this.perfilAuditorToolStripMenuItem.Name = "perfilAuditorToolStripMenuItem";
+            this.perfilAuditorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.perfilAuditorToolStripMenuItem.Text = "Perfil Auditor";
+            this.perfilAuditorToolStripMenuItem.Click += new System.EventHandler(this.perfilAuditorToolStripMenuItem_Click);
             // 
             // Frm_MDI_Auditoria
             // 
@@ -629,6 +638,7 @@ namespace Capa_Vista_Auditoria
         private ToolStripMenuItem grupo3ToolStripMenuItem;
         private ToolStripMenuItem grupo4ToolStripMenuItem;
         private ToolStripMenuItem auditadosToolStripMenuItem;
+        private ToolStripMenuItem perfilAuditorToolStripMenuItem;
     }
 }
 
