@@ -70,6 +70,7 @@ namespace Capa_Vista_Auditoria
             this.grupo1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grupo2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.auditadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.perfilAuditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grupo3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.grupo4ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.windowsMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -88,7 +89,11 @@ namespace Capa_Vista_Auditoria
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.perfilAuditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estadoAuditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.auditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proyectoAuditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proyectoAuditadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.asignacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.menuStrip.SuspendLayout();
@@ -387,7 +392,7 @@ namespace Capa_Vista_Auditoria
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.optionsToolStripMenuItem.Text = "&Opciones";
             // 
             // gruposToolStripMenuItem
@@ -411,7 +416,12 @@ namespace Capa_Vista_Auditoria
             // 
             this.grupo2ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.auditadosToolStripMenuItem,
-            this.perfilAuditorToolStripMenuItem});
+            this.perfilAuditorToolStripMenuItem,
+            this.estadoAuditorToolStripMenuItem,
+            this.auditorToolStripMenuItem,
+            this.proyectoAuditorToolStripMenuItem,
+            this.proyectoAuditadoToolStripMenuItem,
+            this.asignacionesToolStripMenuItem});
             this.grupo2ToolStripMenuItem.Name = "grupo2ToolStripMenuItem";
             this.grupo2ToolStripMenuItem.Size = new System.Drawing.Size(222, 22);
             this.grupo2ToolStripMenuItem.Text = "Auditores y Asignaciones";
@@ -420,9 +430,16 @@ namespace Capa_Vista_Auditoria
             // auditadosToolStripMenuItem
             // 
             this.auditadosToolStripMenuItem.Name = "auditadosToolStripMenuItem";
-            this.auditadosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.auditadosToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.auditadosToolStripMenuItem.Text = "Auditados";
             this.auditadosToolStripMenuItem.Click += new System.EventHandler(this.auditadosToolStripMenuItem_Click);
+            // 
+            // perfilAuditorToolStripMenuItem
+            // 
+            this.perfilAuditorToolStripMenuItem.Name = "perfilAuditorToolStripMenuItem";
+            this.perfilAuditorToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.perfilAuditorToolStripMenuItem.Text = "Perfil Auditor";
+            this.perfilAuditorToolStripMenuItem.Click += new System.EventHandler(this.perfilAuditorToolStripMenuItem_Click);
             // 
             // grupo3ToolStripMenuItem
             // 
@@ -550,12 +567,35 @@ namespace Capa_Vista_Auditoria
             this.toolStripStatusLabel.Size = new System.Drawing.Size(42, 17);
             this.toolStripStatusLabel.Text = "Estado";
             // 
-            // perfilAuditorToolStripMenuItem
+            // estadoAuditorToolStripMenuItem
             // 
-            this.perfilAuditorToolStripMenuItem.Name = "perfilAuditorToolStripMenuItem";
-            this.perfilAuditorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.perfilAuditorToolStripMenuItem.Text = "Perfil Auditor";
-            this.perfilAuditorToolStripMenuItem.Click += new System.EventHandler(this.perfilAuditorToolStripMenuItem_Click);
+            this.estadoAuditorToolStripMenuItem.Name = "estadoAuditorToolStripMenuItem";
+            this.estadoAuditorToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.estadoAuditorToolStripMenuItem.Text = "Estado Auditor";
+            // 
+            // auditorToolStripMenuItem
+            // 
+            this.auditorToolStripMenuItem.Name = "auditorToolStripMenuItem";
+            this.auditorToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.auditorToolStripMenuItem.Text = "Auditor";
+            // 
+            // proyectoAuditorToolStripMenuItem
+            // 
+            this.proyectoAuditorToolStripMenuItem.Name = "proyectoAuditorToolStripMenuItem";
+            this.proyectoAuditorToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.proyectoAuditorToolStripMenuItem.Text = "Proyecto Auditor";
+            // 
+            // proyectoAuditadoToolStripMenuItem
+            // 
+            this.proyectoAuditadoToolStripMenuItem.Name = "proyectoAuditadoToolStripMenuItem";
+            this.proyectoAuditadoToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.proyectoAuditadoToolStripMenuItem.Text = "Proyecto Auditado ";
+            // 
+            // asignacionesToolStripMenuItem
+            // 
+            this.asignacionesToolStripMenuItem.Name = "asignacionesToolStripMenuItem";
+            this.asignacionesToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.asignacionesToolStripMenuItem.Text = "Asignaciones";
             // 
             // Frm_MDI_Auditoria
             // 
@@ -639,6 +679,11 @@ namespace Capa_Vista_Auditoria
         private ToolStripMenuItem grupo4ToolStripMenuItem;
         private ToolStripMenuItem auditadosToolStripMenuItem;
         private ToolStripMenuItem perfilAuditorToolStripMenuItem;
+        private ToolStripMenuItem estadoAuditorToolStripMenuItem;
+        private ToolStripMenuItem auditorToolStripMenuItem;
+        private ToolStripMenuItem proyectoAuditorToolStripMenuItem;
+        private ToolStripMenuItem proyectoAuditadoToolStripMenuItem;
+        private ToolStripMenuItem asignacionesToolStripMenuItem;
     }
 }
 
