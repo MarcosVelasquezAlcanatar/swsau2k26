@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using mantenimiento_auditores;
 using Capa_Vista_Perfil_Auditor;
 using Capa_Vista_Auditor;
+using Capavista_pauditado;
+using Capa_Vista_Asignacion;
+using Capa_Vista_ProAuditor;
 
 namespace Capa_Vista_Auditoria
 {
@@ -148,6 +151,24 @@ namespace Capa_Vista_Auditoria
         {
             Frm_Auditor auditor = new Frm_Auditor();
             auditor.Show();
+        }
+
+        private void proyectoAuditadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_pauditado auditado = new Frm_pauditado();
+            auditado.Show();
+        }
+
+        private void asignacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Asignacion asignaciones  = new Frm_Asignacion();
+            asignaciones.Show();
+        }
+
+        private void proyectoAuditorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_ProyectoAuditor proyectoAuditor = new Frm_ProyectoAuditor();
+            proyectoAuditor.Show();
         }
     }
 }

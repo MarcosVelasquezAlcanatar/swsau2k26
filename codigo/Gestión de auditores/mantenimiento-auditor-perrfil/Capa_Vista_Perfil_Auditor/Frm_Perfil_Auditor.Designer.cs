@@ -47,10 +47,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.navegador1);
             this.Name = "Frm_Perfil_Auditor";
-            this.Text = "Frm_Perfil_Auditor";
+            this.Text = "Perfil Auditor";
             this.ResumeLayout(false);
 
         }
