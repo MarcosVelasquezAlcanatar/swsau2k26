@@ -67,9 +67,9 @@ namespace Capa_Vista_ProAuditor
             this.Lbl_Titulo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Lbl_Titulo.Location = new System.Drawing.Point(13, 41);
             this.Lbl_Titulo.Name = "Lbl_Titulo";
-            this.Lbl_Titulo.Size = new System.Drawing.Size(43, 17);
+            this.Lbl_Titulo.Size = new System.Drawing.Size(141, 17);
             this.Lbl_Titulo.TabIndex = 1;
-            this.Lbl_Titulo.Text = "Titulo";
+            this.Lbl_Titulo.Text = "Gestión de Auditores";
             this.Lbl_Titulo.Click += new System.EventHandler(this.Lbl_Titulo_Click);
             // 
             // Lbl_Subtitulo
@@ -78,9 +78,9 @@ namespace Capa_Vista_ProAuditor
             this.Lbl_Subtitulo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Lbl_Subtitulo.Location = new System.Drawing.Point(13, 71);
             this.Lbl_Subtitulo.Name = "Lbl_Subtitulo";
-            this.Lbl_Subtitulo.Size = new System.Drawing.Size(63, 17);
+            this.Lbl_Subtitulo.Size = new System.Drawing.Size(113, 17);
             this.Lbl_Subtitulo.TabIndex = 2;
-            this.Lbl_Subtitulo.Text = "Subtitulo";
+            this.Lbl_Subtitulo.Text = "Proyecto Auditor";
             // 
             // Gpb_Datos
             // 
