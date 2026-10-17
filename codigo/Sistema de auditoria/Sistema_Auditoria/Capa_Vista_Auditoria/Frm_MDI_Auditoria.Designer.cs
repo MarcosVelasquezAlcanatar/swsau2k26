@@ -109,7 +109,7 @@ namespace Capa_Vista_Auditoria
             this.pnlHeader.Controls.Add(this.pnlLineaHeader);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(2);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(632, 73);
             this.pnlHeader.TabIndex = 100;
@@ -118,7 +118,7 @@ namespace Capa_Vista_Auditoria
             // 
             this.picLogo.Image = global::Capa_Vista_Auditoria.Properties.Resources.logo_auditores;
             this.picLogo.Location = new System.Drawing.Point(14, 11);
-            this.picLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picLogo.Margin = new System.Windows.Forms.Padding(2);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(48, 52);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -154,7 +154,7 @@ namespace Capa_Vista_Auditoria
             this.pnlLineaHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
             this.pnlLineaHeader.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlLineaHeader.Location = new System.Drawing.Point(0, 71);
-            this.pnlLineaHeader.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlLineaHeader.Margin = new System.Windows.Forms.Padding(2);
             this.pnlLineaHeader.Name = "pnlLineaHeader";
             this.pnlLineaHeader.Size = new System.Drawing.Size(632, 2);
             this.pnlLineaHeader.TabIndex = 104;
@@ -446,6 +446,7 @@ namespace Capa_Vista_Auditoria
             this.estadoAuditorToolStripMenuItem.Name = "estadoAuditorToolStripMenuItem";
             this.estadoAuditorToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.estadoAuditorToolStripMenuItem.Text = "Estado Auditor";
+            this.estadoAuditorToolStripMenuItem.Click += new System.EventHandler(this.estadoAuditorToolStripMenuItem_Click);
             // 
             // auditorToolStripMenuItem
             // 

@@ -13,6 +13,7 @@ using Capa_Vista_Auditor;
 using Capavista_pauditado;
 using Capa_Vista_Asignacion;
 using Capa_Vista_ProAuditor;
+using Capa_Vista_Estado_Auditor;
 
 namespace Capa_Vista_Auditoria
 {
@@ -169,6 +170,12 @@ namespace Capa_Vista_Auditoria
         {
             Frm_ProyectoAuditor proyectoAuditor = new Frm_ProyectoAuditor();
             proyectoAuditor.Show();
+        }
+
+        private void estadoAuditorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Estado_Auditor estado_Auditor = new Frm_Estado_Auditor();
+            estado_Auditor.Show();
         }
     }
 }
