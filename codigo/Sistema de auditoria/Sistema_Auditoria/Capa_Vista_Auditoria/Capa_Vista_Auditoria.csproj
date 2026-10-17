@@ -8,8 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="Capavista_pauditado">
+      <HintPath>..\..\..\Gestión de auditores\proyecto_auditado\proyecto_auditado\Capavista_pauditado\bin\Debug\Capavista_pauditado.dll</HintPath>
+    </Reference>
     <Reference Include="Capa_Controlador_Seguridad">
       <HintPath>..\..\..\componentes\seguridad\SeguridadMVC\SeguridadMVC\CapaControlador\bin\Debug\Capa_Controlador_Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="Capa_Vista_Asignacion">
+      <HintPath>..\..\..\Gestión de auditores\KenphLuna\Asignaciones\Capa_Vista_Asignacion\bin\Debug\Capa_Vista_Asignacion.dll</HintPath>
     </Reference>
     <Reference Include="Capa_Vista_Auditor">
       <HintPath>..\..\..\Gestión de auditores\Formulario-Auditor\Auditor\Capa_Vista_Auditor\bin\Debug\Capa_Vista_Auditor.dll</HintPath>
@@ -19,6 +25,9 @@
     </Reference>
     <Reference Include="mantenimiento_auditores">
       <HintPath>..\..\..\Gestión de auditores\mantenimiento auditado\mantenimiento_auditores\mantenimiento_auditores\bin\Debug\mantenimiento_auditores.dll</HintPath>
+    </Reference>
+    <Reference Include="ProyectoAuditor">
+      <HintPath>..\..\..\Gestión de auditores\Proyecto Auditor\ProyectoAuditor\bin\Debug\ProyectoAuditor.dll</HintPath>
     </Reference>
   </ItemGroup>
 

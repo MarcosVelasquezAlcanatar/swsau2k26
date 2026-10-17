@@ -44,13 +44,14 @@ namespace mantenimiento_auditores
             this.navegador1.SNombreTabla = null;
             this.navegador1.TabIndex = 0;
             // 
-            // Frm_auditores
+            // Frm_auditados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(1129, 450);
             this.Controls.Add(this.navegador1);
-            this.Name = "Frm_auditores";
+            this.Name = "Frm_auditados";
             this.Text = "Auditores";
             this.ResumeLayout(false);
 
