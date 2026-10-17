@@ -12,7 +12,7 @@
       <HintPath>..\..\..\componentes\seguridad\SeguridadMVC\SeguridadMVC\CapaControlador\bin\Debug\Capa_Controlador_Seguridad.dll</HintPath>
     </Reference>
     <Reference Include="Capa_Vista_Auditor">
-      <HintPath>..\..\..\..\..\Users\samay\Downloads\Auditor\Capa_Vista_Auditor\bin\Debug\Capa_Vista_Auditor.dll</HintPath>
+      <HintPath>..\..\..\Gestión de auditores\Formulario-Auditor\Auditor\Capa_Vista_Auditor\bin\Debug\Capa_Vista_Auditor.dll</HintPath>
     </Reference>
     <Reference Include="Capa_Vista_Perfil_Auditor">
       <HintPath>..\..\..\Gestión de auditores\mantenimiento-auditor-perrfil\Capa_Vista_Perfil_Auditor\bin\Debug\Capa_Vista_Perfil_Auditor.dll</HintPath>
