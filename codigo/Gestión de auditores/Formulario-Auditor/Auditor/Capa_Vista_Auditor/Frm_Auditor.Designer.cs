@@ -41,11 +41,11 @@
             this.Btn_cancelar = new System.Windows.Forms.Button();
             this.Btn_modificar = new System.Windows.Forms.Button();
             this.gb_auditor = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Txt_carnet = new System.Windows.Forms.TextBox();
+            this.Txt_email = new System.Windows.Forms.TextBox();
+            this.Txt_telefono = new System.Windows.Forms.TextBox();
             this.Lbl_telefono = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Txt_nombre = new System.Windows.Forms.TextBox();
             this.Txt_id_auditor = new System.Windows.Forms.TextBox();
             this.Cbo_estado = new System.Windows.Forms.ComboBox();
             this.Lbl_Estado = new System.Windows.Forms.Label();
@@ -53,10 +53,10 @@
             this.Lbl_carnet = new System.Windows.Forms.Label();
             this.Lbl_email = new System.Windows.Forms.Label();
             this.Lbl_id_auditor = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Dgv_auditor = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.gb_auditor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_auditor)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -94,6 +94,7 @@
             this.Btn_salir.Text = "Salir";
             this.Btn_salir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_salir.UseVisualStyleBackColor = true;
+            this.Btn_salir.Click += new System.EventHandler(this.Btn_salir_Click);
             // 
             // Btn_eliminar
             // 
@@ -107,6 +108,7 @@
             this.Btn_eliminar.Text = "Eliminar";
             this.Btn_eliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_eliminar.UseVisualStyleBackColor = true;
+            this.Btn_eliminar.Click += new System.EventHandler(this.Btn_eliminar_Click);
             // 
             // Btn_guardar
             // 
@@ -121,6 +123,7 @@
             this.Btn_guardar.Text = "Guardar";
             this.Btn_guardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_guardar.UseVisualStyleBackColor = true;
+            this.Btn_guardar.Click += new System.EventHandler(this.Btn_guardar_Click);
             // 
             // Btn_consultar
             // 
@@ -134,6 +137,7 @@
             this.Btn_consultar.Text = "Consultar";
             this.Btn_consultar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_consultar.UseVisualStyleBackColor = true;
+            this.Btn_consultar.Click += new System.EventHandler(this.Btn_consultar_Click);
             // 
             // Btn_reporte
             // 
@@ -147,6 +151,7 @@
             this.Btn_reporte.Text = "Imprimir";
             this.Btn_reporte.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_reporte.UseVisualStyleBackColor = true;
+            this.Btn_reporte.Click += new System.EventHandler(this.Btn_reporte_Click);
             // 
             // Btn_ingresar
             // 
@@ -160,6 +165,7 @@
             this.Btn_ingresar.Text = "Ingresar";
             this.Btn_ingresar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_ingresar.UseVisualStyleBackColor = true;
+            this.Btn_ingresar.Click += new System.EventHandler(this.Btn_ingresar_Click);
             // 
             // Btn_ayuda
             // 
@@ -173,6 +179,7 @@
             this.Btn_ayuda.Text = "Ayuda";
             this.Btn_ayuda.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_ayuda.UseVisualStyleBackColor = true;
+            this.Btn_ayuda.Click += new System.EventHandler(this.Btn_ayuda_Click);
             // 
             // Btn_cancelar
             // 
@@ -186,6 +193,7 @@
             this.Btn_cancelar.Text = "Cancelar";
             this.Btn_cancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_cancelar.UseVisualStyleBackColor = true;
+            this.Btn_cancelar.Click += new System.EventHandler(this.Btn_cancelar_Click);
             // 
             // Btn_modificar
             // 
@@ -199,14 +207,15 @@
             this.Btn_modificar.Text = "Modificar";
             this.Btn_modificar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Btn_modificar.UseVisualStyleBackColor = true;
+            this.Btn_modificar.Click += new System.EventHandler(this.Btn_modificar_Click);
             // 
             // gb_auditor
             // 
-            this.gb_auditor.Controls.Add(this.textBox4);
-            this.gb_auditor.Controls.Add(this.textBox3);
-            this.gb_auditor.Controls.Add(this.textBox2);
+            this.gb_auditor.Controls.Add(this.Txt_carnet);
+            this.gb_auditor.Controls.Add(this.Txt_email);
+            this.gb_auditor.Controls.Add(this.Txt_telefono);
             this.gb_auditor.Controls.Add(this.Lbl_telefono);
-            this.gb_auditor.Controls.Add(this.textBox1);
+            this.gb_auditor.Controls.Add(this.Txt_nombre);
             this.gb_auditor.Controls.Add(this.Txt_id_auditor);
             this.gb_auditor.Controls.Add(this.Cbo_estado);
             this.gb_auditor.Controls.Add(this.Lbl_Estado);
@@ -219,31 +228,32 @@
             this.gb_auditor.Margin = new System.Windows.Forms.Padding(4);
             this.gb_auditor.Name = "gb_auditor";
             this.gb_auditor.Padding = new System.Windows.Forms.Padding(4);
-            this.gb_auditor.Size = new System.Drawing.Size(818, 225);
+            this.gb_auditor.Size = new System.Drawing.Size(848, 225);
             this.gb_auditor.TabIndex = 83;
             this.gb_auditor.TabStop = false;
             this.gb_auditor.Text = "Datos del Auditor";
             // 
-            // textBox4
+            // Txt_carnet
             // 
-            this.textBox4.Location = new System.Drawing.Point(595, 36);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(148, 27);
-            this.textBox4.TabIndex = 89;
+            this.Txt_carnet.Location = new System.Drawing.Point(634, 33);
+            this.Txt_carnet.Name = "Txt_carnet";
+            this.Txt_carnet.Size = new System.Drawing.Size(148, 27);
+            this.Txt_carnet.TabIndex = 89;
             // 
-            // textBox3
+            // Txt_email
             // 
-            this.textBox3.Location = new System.Drawing.Point(133, 166);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(314, 27);
-            this.textBox3.TabIndex = 88;
+            this.Txt_email.Location = new System.Drawing.Point(133, 166);
+            this.Txt_email.Name = "Txt_email";
+            this.Txt_email.Size = new System.Drawing.Size(314, 27);
+            this.Txt_email.TabIndex = 88;
             // 
-            // textBox2
+            // Txt_telefono
             // 
-            this.textBox2.Location = new System.Drawing.Point(133, 121);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 27);
-            this.textBox2.TabIndex = 87;
+            this.Txt_telefono.Location = new System.Drawing.Point(133, 121);
+            this.Txt_telefono.MaxLength = 9;
+            this.Txt_telefono.Name = "Txt_telefono";
+            this.Txt_telefono.Size = new System.Drawing.Size(148, 27);
+            this.Txt_telefono.TabIndex = 87;
             // 
             // Lbl_telefono
             // 
@@ -256,24 +266,27 @@
             this.Lbl_telefono.TabIndex = 86;
             this.Lbl_telefono.Text = "Teléfono:";
             // 
-            // textBox1
+            // Txt_nombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(133, 78);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(314, 27);
-            this.textBox1.TabIndex = 85;
+            this.Txt_nombre.Location = new System.Drawing.Point(133, 78);
+            this.Txt_nombre.Name = "Txt_nombre";
+            this.Txt_nombre.Size = new System.Drawing.Size(314, 27);
+            this.Txt_nombre.TabIndex = 85;
             // 
             // Txt_id_auditor
             // 
+            this.Txt_id_auditor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.Txt_id_auditor.Location = new System.Drawing.Point(133, 36);
             this.Txt_id_auditor.Name = "Txt_id_auditor";
+            this.Txt_id_auditor.ReadOnly = true;
             this.Txt_id_auditor.Size = new System.Drawing.Size(102, 27);
             this.Txt_id_auditor.TabIndex = 84;
+            this.Txt_id_auditor.TabStop = false;
             // 
             // Cbo_estado
             // 
             this.Cbo_estado.FormattingEnabled = true;
-            this.Cbo_estado.Location = new System.Drawing.Point(595, 133);
+            this.Cbo_estado.Location = new System.Drawing.Point(634, 130);
             this.Cbo_estado.Margin = new System.Windows.Forms.Padding(4);
             this.Cbo_estado.MaxLength = 13;
             this.Cbo_estado.Name = "Cbo_estado";
@@ -284,7 +297,7 @@
             // 
             this.Lbl_Estado.AutoSize = true;
             this.Lbl_Estado.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Estado.Location = new System.Drawing.Point(506, 138);
+            this.Lbl_Estado.Location = new System.Drawing.Point(545, 135);
             this.Lbl_Estado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Lbl_Estado.Name = "Lbl_Estado";
             this.Lbl_Estado.Size = new System.Drawing.Size(67, 20);
@@ -306,7 +319,7 @@
             // 
             this.Lbl_carnet.AutoSize = true;
             this.Lbl_carnet.Font = new System.Drawing.Font("Rockwell", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_carnet.Location = new System.Drawing.Point(505, 43);
+            this.Lbl_carnet.Location = new System.Drawing.Point(544, 40);
             this.Lbl_carnet.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Lbl_carnet.Name = "Lbl_carnet";
             this.Lbl_carnet.Size = new System.Drawing.Size(68, 20);
@@ -335,15 +348,24 @@
             this.Lbl_id_auditor.TabIndex = 0;
             this.Lbl_id_auditor.Text = "ID Auditor:";
             // 
-            // dataGridView1
+            // Dgv_auditor
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(54, 475);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(818, 171);
-            this.dataGridView1.TabIndex = 84;
+            this.Dgv_auditor.AllowUserToAddRows = false;
+            this.Dgv_auditor.AllowUserToDeleteRows = false;
+            this.Dgv_auditor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Dgv_auditor.BackgroundColor = System.Drawing.Color.White;
+            this.Dgv_auditor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_auditor.Location = new System.Drawing.Point(54, 475);
+            this.Dgv_auditor.MultiSelect = false;
+            this.Dgv_auditor.Name = "Dgv_auditor";
+            this.Dgv_auditor.ReadOnly = true;
+            this.Dgv_auditor.RowHeadersVisible = false;
+            this.Dgv_auditor.RowHeadersWidth = 51;
+            this.Dgv_auditor.RowTemplate.Height = 24;
+            this.Dgv_auditor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Dgv_auditor.Size = new System.Drawing.Size(848, 171);
+            this.Dgv_auditor.TabIndex = 84;
+            this.Dgv_auditor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_auditor_CellClick);
             // 
             // Frm_Auditor
             // 
@@ -351,7 +373,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(170)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(973, 669);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Dgv_auditor);
             this.Controls.Add(this.gb_auditor);
             this.Controls.Add(this.Btn_salir);
             this.Controls.Add(this.Btn_eliminar);
@@ -371,7 +393,7 @@
             this.panel1.PerformLayout();
             this.gb_auditor.ResumeLayout(false);
             this.gb_auditor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_auditor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -397,11 +419,11 @@
         private System.Windows.Forms.Label Lbl_email;
         private System.Windows.Forms.Label Lbl_id_auditor;
         private System.Windows.Forms.TextBox Txt_id_auditor;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Txt_telefono;
         private System.Windows.Forms.Label Lbl_telefono;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox Txt_nombre;
+        private System.Windows.Forms.TextBox Txt_email;
+        private System.Windows.Forms.TextBox Txt_carnet;
+        private System.Windows.Forms.DataGridView Dgv_auditor;
     }
 }

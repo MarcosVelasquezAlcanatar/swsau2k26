@@ -1,8 +1,8 @@
 ﻿using System;
 
+//Erneto David Samayoa Jocol 0901-22-3415
 namespace Capa_Modelo_Auditor
 {
-    // Entidad: una propiedad por cada columna de tbl_auditor
     public class Cls_auditor
     {
         public int Pk_Id_Auditor { get; set; }
@@ -26,4 +26,5 @@ namespace Capa_Modelo_Auditor
             Cmp_Carnet_Auditor = sCmp_Carnet_Auditor;
         }
     }
+    //Erneto David Samayoa Jocol 0901-22-3415 17/10/2026
 }
