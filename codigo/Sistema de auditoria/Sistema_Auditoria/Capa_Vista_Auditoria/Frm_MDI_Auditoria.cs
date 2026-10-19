@@ -7,13 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using mantenimiento_auditores;
-using Capa_Vista_Perfil_Auditor;
-using Capa_Vista_Auditor;
-using Capavista_pauditado;
-using Capa_Vista_Asignacion;
-using Capa_Vista_ProAuditor;
-using Capa_Vista_Estado_Auditor;
+
 
 namespace Capa_Vista_Auditoria
 {
@@ -136,46 +130,5 @@ namespace Capa_Vista_Auditoria
 
         }
 
-        private void auditadosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_auditados auditados = new Frm_auditados();
-            auditados.Show();
-        }
-
-        private void perfilAuditorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_Perfil_Auditor perfil_Auditor = new Frm_Perfil_Auditor();
-            perfil_Auditor.Show();
-        }
-
-        private void auditorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_Auditor auditor = new Frm_Auditor();
-            auditor.Show();
-        }
-
-        private void proyectoAuditadoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_pauditado auditado = new Frm_pauditado();
-            auditado.Show();
-        }
-
-        private void asignacionesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_Asignacion asignaciones  = new Frm_Asignacion();
-            asignaciones.Show();
-        }
-
-        private void proyectoAuditorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_ProyectoAuditor proyectoAuditor = new Frm_ProyectoAuditor();
-            proyectoAuditor.Show();
-        }
-
-        private void estadoAuditorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_Estado_Auditor estado_Auditor = new Frm_Estado_Auditor();
-            estado_Auditor.Show();
-        }
     }
 }
