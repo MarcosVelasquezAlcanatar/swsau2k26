@@ -96,10 +96,6 @@ namespace Capa_Vista_Auditoria
         {
         }
 
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
-        }
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -136,11 +132,6 @@ namespace Capa_Vista_Auditoria
 
         }
 
-        private void proyectoEstadosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Frm_PE FrmProyectoEstado = new Frm_PE();
-            FrmProyectoEstado.Show();
-        }
 
         private void actividadesDelProyectoToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -157,6 +148,12 @@ namespace Capa_Vista_Auditoria
         {
             Frm_Recursos FrmRecursos = new Frm_Recursos();
             FrmRecursos.Show();
+        }
+
+        private void proyectoEstadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_PE FrmProyectoEstado = new Frm_PE();
+            FrmProyectoEstado.Show();
         }
     }
 }
